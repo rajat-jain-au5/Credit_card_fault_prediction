@@ -54,7 +54,7 @@ class DataTransformation:
         """
         try:
             data = pd.read_csv(feature_store_file_path)
-            data.rename(columns={"diagnosis": TARGET_COLUMN}, inplace=True)
+            data.rename(columns={"default payment next month": TARGET_COLUMN}, inplace=True)
 
 
             return data

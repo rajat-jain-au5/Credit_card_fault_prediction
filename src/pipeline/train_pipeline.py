@@ -37,6 +37,7 @@ class TraininingPipeline:
 
 
     def start_model_training(self, train_arr, test_arr):
+        print('33333',test_arr)
         try:
             model_trainer = ModelTrainer()
             model_score = model_trainer.initiate_model_trainer(
